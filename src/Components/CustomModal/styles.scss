@@ -1,0 +1,23 @@
+.btn-close {
+    background-image: url(../../assets/img/fa-close.svg) !important;
+    width: 12px;
+    height: 12px;
+    border: 0;
+    background-color: transparent;
+}
+
+
+.btn-close:focus {
+    outline: none;
+    /* no outline - for most browsers */
+    box-shadow: none;
+    /* no box shadow - for some browsers or if you are using Bootstrap */
+}
+
+.divider-top-hide {
+    border-top: 0 !important;
+}
+
+.divider-bottom-hide {
+    border-bottom: 0 !important;
+}

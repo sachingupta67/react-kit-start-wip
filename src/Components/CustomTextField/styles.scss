@@ -1,0 +1,13 @@
+@import '../../common/styles/scss/astm_variables';
+#password ,#email{
+    background-image: none !important;
+}
+.input-group-append {
+    position: absolute;
+    right: 0.7rem;
+    bottom: 0.7rem;
+    cursor: pointer;
+    .fa {
+      color: $color-system-gray-35;
+    }
+}

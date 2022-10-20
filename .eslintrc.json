@@ -1,0 +1,83 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "standard-with-typescript",
+        "prettier"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "*.ts",
+                ".tsx"
+            ]
+        }
+    ],
+    "parserOptions": {
+        "project": [
+            "./tsconfig.json"
+        ],
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react","react-hooks"
+    ],
+    "rules": {
+        // Go through all the rules and try to remove it from here so that we can build better code
+        "import/order": 0,
+        "react/react-in-jsx-scope": "off",
+        "import/no-named-as-default": 0,
+        "react/require-default-props": 0,
+        "jsx-a11y/aria-role": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "jsx-a11y/click-events-have-key-events": 0,
+        "jsx-a11y/no-static-element-interactions": 0,
+        "jsx-a11y/no-noninteractive-element-interactions": 0,
+        "react/jsx-props-no-spreading": "off",
+        "import/no-unresolved": "off",
+        // "react/prop-types": "warn",
+        // "react/no-unused-prop-types": 0,
+        "prettier/prettier": 0,
+        "no-nested-ternary": 0,
+        // "import/no-extraneous-dependencies":["**/*.stories.{ts,tsx}"]
+        // "import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+        "import/prefer-default-export": "off",
+        "react/no-array-index-key": 0,
+        "react-hooks/exhaustive-deps": "warn",
+        "object-property-newline": "off",
+        "no-lonely-if": "off",
+        "no-else-return": "off",
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "@typescript-eslint/naming-convention": [
+            "off"
+        ],
+        "jest/no-commented-out-tests": [
+            "off"
+        ],
+        "no-underscore-dangle": 0,
+        "jsx-a11y/media-has-caption": 0,
+        "import/extensions": "off",
+        "react/prop-types": 0,
+        "import/export": 0,
+        "no-unused-vars": "warn",
+        "no-console":"warn",
+        "@typescript-eslint/no-floating-promises": 0,
+        "@typescript-eslint/no-unused-vars":"warn",
+        "@typescript-eslint/strict-boolean-expressions":"off",
+        "@typescript-eslint/prefer-nullish-coalescing":"off"   
+    },
+    "settings": {
+        "react": {
+            "version": "^18.2.0"
+        }
+    }
+}

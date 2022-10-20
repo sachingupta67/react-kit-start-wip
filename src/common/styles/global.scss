@@ -1,0 +1,128 @@
+@import './scss/astm_variables';
+.content__main {
+  background-color: $color-system-gray-15;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 1.5rem;
+  min-height: 100vh;
+}
+.attribute-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  thead {
+    background-color: $color-brand-blue-80;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    th {
+      font-size: $font-size-14;
+      font-weight: $font-weight-500;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      background-color: unset;
+      &:first-child {
+        border-top-left-radius: 10px;
+      }
+      &:last-child {
+        border-top-right-radius: 10px;
+      }
+    }
+    tr {
+      &:first-of-type {
+        th {
+          background-color: unset;
+          border-bottom: 0px;
+        } 
+      }
+    }
+  }
+  tbody {
+    .astm-table-tr {
+      &:nth-of-type(odd) {
+        background-color: #fff;
+      }
+      &:nth-of-type(even) {
+        background-color: #f1f1f1;
+      }
+      td {
+        text-align: center;
+        font-size: $font-size-14;
+        line-height: 1.25rem;
+        font-weight: $font-weight-400;
+        color: $color-system-black;
+        &.no-data {
+          padding: 2.5rem;
+          h4 {
+            font-size: $font-size-32;
+            color: $color-system-black;
+            margin-top: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+.placeholder-img {
+  margin: 0 auto;
+}
+.astm-btn {
+  &.btn-disabled {
+    background-color: $color-system-gray-15;
+  }
+}
+input {
+  &.form-control {
+    border-color: $color-system-gray-15;
+  }
+}
+/* clears the 'X' from Internet Explorer */
+.search-input-group input[type=search]::-ms-clear,
+.search-input-group input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0; 
+}
+/* clears the 'X' from Chrome */
+.search-input-group input[type="search"]::-webkit-search-decoration,
+.search-input-group input[type="search"]::-webkit-search-cancel-button,
+.search-input-group input[type="search"]::-webkit-search-results-button,
+.search-input-group input[type="search"]::-webkit-search-results-decoration {
+  display: none; 
+}
+.search-input-group {
+  position: relative;
+  .org-search {
+    .form-control {
+      padding-right: 2.5rem;
+    }
+  }
+}
+.modal-backdrop {
+  width: 100% !important;
+  height: 100% !important;
+}
+.attribute-add-btn {
+  text-align: right;
+  margin-right: 14rem;
+}
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #f5f5f5;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f5f5f5;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #d9d9d9;
+}
+.MuiTablePagination-root {
+  margin: 0px 2rem;
+}
+.MuiToolbar-root {
+  background-color: #fff;
+}

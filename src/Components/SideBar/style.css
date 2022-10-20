@@ -1,0 +1,52 @@
+.drawer__nav .MuiPaper-root {
+  top: 10rem;
+  height: calc(100% - 10rem);
+}
+.aside .active {
+  color: skyblue;
+}
+.nav-bar-link {
+  text-decoration: none;
+}
+.nav-bar-link:hover {
+  color: green;
+}
+.MuiIconButton-root.hide {
+  display: none;
+}
+.MuiList-root.bottom__item {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.MuiListItem-root.nav__item__list {
+  padding: 0px;
+}
+.MuiListItem-root.nav__item__list .nav__item {
+  min-height: 48;
+  -webkit-box-pack: initial;
+  -ms-flex-pack: initial;
+  -webkit-justify-content: initial;
+  justify-content: initial;
+  padding: 8px 20px;
+}
+.MuiListItem-root.nav__item__list.close .nav__item {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.MuiListItem-root.nav__item__list .nav__item__icon {
+  min-width: 0;
+  justify-content: center;
+  margin-right: 24px;
+}
+.MuiListItem-root.nav__item__list.close .nav__item__icon {
+  margin-right: auto;
+}
+.MuiListItem-root.nav__item__list .nav__item__text {
+  opacity: 1;
+}
+.MuiListItem-root.nav__item__list.close .nav__item__text {
+  opacity: 0;
+}

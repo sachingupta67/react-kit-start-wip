@@ -1,0 +1,51 @@
+@import '../../common/styles/scss/astm_variables';
+.header {
+  margin-bottom: 4.813rem;
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar-left {
+      h3 {
+        margin: 0px;
+        color: $color-system-black;
+        font-size: 2rem;
+        line-height: 2.25rem;
+        font-weight: 700;
+      }
+      .change__org {
+        color: $color-brand-blue-80;
+        font-size: $font-size-16;
+        line-height: 1.5rem;
+        letter-spacing: 0.031rem;
+        cursor: pointer;
+      }
+    }
+    .navbar-right {
+        .astm-dropdown {
+            .astm-btn {
+              font-size: $font-size-14;
+              color: $color-system-black;
+              background-color: $color-system-white;
+              border:1px solid $color-system-gray-20;
+              padding-right: 1rem;
+              &::after {
+                margin-left: 0.6rem;
+              }
+            }
+            .dropdown-menu {
+              left: auto !important;
+              right: 0px;
+              padding: 0.44rem 0px;
+              .dropdown-item {
+                color: $color-system-black;
+                font-size: $font-size-14;
+                font-weight: $font-weight-400;
+                cursor: pointer;
+              }
+            }
+        }
+    }
+  }
+}
+

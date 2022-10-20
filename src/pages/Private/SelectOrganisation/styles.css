@@ -1,0 +1,70 @@
+.select__organisations .MuiDialogTitle-root {
+  letter-spacing: 0.18px;
+  line-height: 1.5rem;
+  font-weight: normal;
+  color: #252f39;
+}
+.select__organisations .MuiIconButton-root {
+  color: #252f39;
+}
+.select__organisations .MuiInputAdornment-root {
+  color: #000;
+}
+.select__organisations .MuiInputAdornment-root .MuiBox-root {
+  margin-top: 0.3rem;
+}
+.content-wrapper {
+  max-width: 440px;
+  width: 100%;
+  min-width: 400px;
+  border-radius: 5px !important;
+  padding-bottom: 1rem;
+}
+.org-wrapper {
+  height: 237px;
+  margin-top: 0.5rem;
+  overflow-y: auto;
+}
+.org-wrapper .css-0 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  color: #23036a;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0.6rem 1.1rem 0.5rem 0.6rem;
+  font-weight: 500;
+}
+.org-wrapper .css-0:hover {
+  background-color: #e3e3e3;
+  cursor: pointer;
+}
+.org-wrapper .css-0:last-child {
+  border-bottom: none;
+}
+.org-wrapper .css-0.select-org {
+  background-color: #79b6f3;
+  color: #fff;
+}
+.action {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+.action .MuiButtonBase-root {
+  background-color: #f5cb52;
+  color: #23036a;
+  font-weight: 500;
+  padding: 0.55rem 2rem 0.5rem 2rem;
+}
+.action .MuiButtonBase-root:hover {
+  background-color: #23036a;
+  color: #f5cb52;
+}
+@media (max-width: 480px) {
+  .content-wrapper {
+    min-width: inherit;
+  }
+  .select__organisations .MuiDialogTitle-root {
+    font-size: 1rem;
+  }
+}

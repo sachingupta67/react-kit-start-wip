@@ -1,0 +1,80 @@
+.MuiAppBar-root.header {
+  background: linear-gradient(236.48deg, #252f39 9.65%, #27435f 69.92%);
+}
+.logo_dashboard {
+  display: flex;
+  align-items: center;
+  padding: 2.6rem 1rem 2.5rem 2rem;
+}
+.logo_dashboard .logo__slogan {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.011rem;
+  padding-left: 1rem;
+}
+.header__inner {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: auto;
+  align-items: center;
+}
+.header-left {
+  width: 358px;
+}
+.header-right {
+  width: calc(100% - 358px);
+}
+.navbar-nav {
+  flex-direction: row;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-left {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 1.5rem;
+}
+.navbar-left h3 {
+  width: 100%;
+  margin: 0px;
+  padding: 0px 0.5rem;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+}
+.navbar li {
+  display: inline-block;
+  padding: 5px;
+}
+.navbar-right {
+  padding-right: 2.125rem;
+}
+.user__info {
+  display: flex;
+  align-items: center;
+}
+.user__info span {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: #fff;
+  padding-right: 0.5rem;
+  display: inline-block;
+}
+.user__info span b {
+  font-size: 0.875rem;
+}
+.user__info .avtar {
+  background-color: #f5cb52;
+  font-weight: bold;
+  font-size: 1.3rem;
+  width: 46px;
+  height: 46px;
+}
+.MuiButton-root.change__org {
+  color: #79b6f3;
+}

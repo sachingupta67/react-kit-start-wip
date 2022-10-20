@@ -1,0 +1,32 @@
+@import "../../common/styles/scss/astm_variables";
+.logo {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  top: 35px;
+  left: 35px;
+  .logo__slogan {
+    font-size: $font-size-24;
+    color: $color-system-white;
+    font-weight: $font-weight-400;
+    line-height: 2.5rem;
+    margin: 0px;
+    padding-left: 1.5rem;
+  }
+}
+@media (max-width: 568px) {
+  .logo__slogan {
+    font-size: $font-size-20;
+    padding-left: 1rem;
+  }
+  .logo__image {
+    max-width: 70px;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    left: 15px;
+    top: 15px;
+  }
+}

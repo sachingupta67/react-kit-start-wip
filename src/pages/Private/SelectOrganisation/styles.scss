@@ -1,0 +1,57 @@
+@import '../../../common/styles/scss/astm_variables';
+.modal-dialog {
+  .modal-header {
+    align-items: center;
+    border-bottom-color: $color-system-gray-5;
+    .modal-title {
+      letter-spacing: 0.18px;
+      line-height: 1.5rem;
+      font-weight: normal;
+      color: $color-system-black;
+    }
+  }
+}
+.org-wrapper {
+  height: 237px;
+  margin-top: 0.5rem;
+  overflow-y: auto;
+  .org-item {
+    font-size: $font-size-16;
+    text-transform: uppercase;
+    letter-spacing: 0.031rem;
+    color: $color-system-black;
+    border-bottom: 1px solid $color-system-gray-5;
+    padding: 0.6rem 1.1rem 0.5rem 0.6rem;
+    font-weight: $font-weight-500;
+    &:hover {
+      background-color: $color-system-gray-5;
+      cursor: pointer;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+    &.select-org {
+      background-color: $color-brand-blue-70;
+      color: $color-system-white;
+    }
+  }
+}
+.action {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  .astm-btn {
+    padding: 0.56rem 2.25rem;
+    font-weight: $font-weight-500;
+    font-size: $font-size-14;
+    letter-spacing: 0.078rem;
+    color: $color-system-black;
+  }
+}
+@media (max-width: 480px) {
+  .modal-header {
+    .modal-title {
+      font-size: $font-size-16;
+    }
+  }
+}
